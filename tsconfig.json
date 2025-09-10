@@ -9,9 +9,7 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "types": [
-      "next-env.d.ts"
-    ],
+  // Rely on Next.js automatic type inclusion; do not manually list next-env
     "lib": [
       "dom",
       "dom.iterable",
@@ -28,6 +26,7 @@
     ]
   },
   "include": [
+    "next-env.d.ts",
     "src",
     ".next/types/**/*.ts"
   ],
