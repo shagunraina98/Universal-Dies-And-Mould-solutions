@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title1 desc1">
+  <title id="title1">Placeholder Product 1</title>
+  <desc id="desc1">Abstract mechanical gears composition</desc>
+  <rect width="600" height="400" fill="#0f172a" />
+  <g stroke="#38bdf8" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <circle cx="170" cy="200" r="70" fill="#1e293b" />
+    <circle cx="170" cy="200" r="32" fill="#0f172a" />
+    <path d="M170 120V96 M170 304V280 M90 200H66 M274 200H250 M119 149L102 132 M238 268L221 251 M119 251L102 268 M238 132L221 149" />
+  </g>
+  <g stroke="#fbbf24" stroke-width="5" opacity="0.9">
+    <circle cx="360" cy="190" r="54" fill="#1e293b" />
+    <circle cx="360" cy="190" r="20" fill="#0f172a" />
+    <path d="M360 136V118 M360 262V244 M306 190H288 M432 190H414 M323 153L309 139 M411 241L397 227 M323 227L309 241 M411 139L397 153" />
+  </g>
+  <rect x="420" y="70" width="120" height="260" rx="14" fill="#1e293b" stroke="#34d399" stroke-width="6" />
+  <circle cx="480" cy="140" r="34" fill="#0f172a" stroke="#34d399" stroke-width="6" />
+  <rect x="446" y="196" width="68" height="84" rx="8" fill="#0f172a" stroke="#34d399" stroke-width="5" />
+</svg>

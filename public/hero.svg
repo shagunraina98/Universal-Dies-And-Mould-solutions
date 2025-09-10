@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2000" height="600" viewBox="0 0 2000 600" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Industrial Hero Background</title>
+  <desc id="desc">Gradient industrial backdrop with abstract geometric shapes</desc>
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="2000" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="45%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="accentA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0.1" />
+    </linearGradient>
+    <linearGradient id="accentB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.05" />
+    </linearGradient>
+    <linearGradient id="accentC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#065f46" stop-opacity="0.05" />
+    </linearGradient>
+    <filter id="blurSoft" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="60" />
+    </filter>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" stroke="#334155" stroke-width="1" stroke-opacity="0.25" />
+    </pattern>
+    <mask id="fadeMask">
+      <rect x="0" y="0" width="2000" height="600" fill="url(#gradMask)" />
+    </mask>
+    <linearGradient id="gradMask" x1="1000" y1="0" x2="1000" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="white" />
+      <stop offset="90%" stop-color="white" />
+      <stop offset="100%" stop-color="black" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background gradient base -->
+  <rect width="2000" height="600" fill="url(#bgGradient)" />
+
+  <!-- Subtle grid overlay -->
+  <rect width="2000" height="600" fill="url(#grid)" opacity="0.3" />
+
+  <!-- Large blurred accent shapes -->
+  <circle cx="350" cy="180" r="240" fill="url(#accentA)" filter="url(#blurSoft)" opacity="0.55" />
+  <circle cx="1650" cy="420" r="260" fill="url(#accentB)" filter="url(#blurSoft)" opacity="0.50" />
+  <circle cx="1080" cy="260" r="200" fill="url(#accentC)" filter="url(#blurSoft)" opacity="0.45" />
+
+  <!-- Foreground geometric accents (industrial feel) -->
+  <g opacity="0.9" stroke="#94a3b8" stroke-width="1.5" stroke-linejoin="round">
+    <rect x="260" y="120" width="140" height="140" rx="8" fill="none" />
+    <rect x="260" y="120" width="140" height="140" rx="8" fill="#38bdf8" opacity="0.05" />
+    <rect x="1600" y="300" width="160" height="160" rx="10" fill="none" />
+    <rect x="1600" y="300" width="160" height="160" rx="10" fill="#fbbf24" opacity="0.05" />
+    <rect x="980" y="140" width="120" height="120" rx="6" fill="none" />
+    <rect x="980" y="140" width="120" height="120" rx="6" fill="#34d399" opacity="0.05" />
+  </g>
+
+  <!-- Diagonal accent bars -->
+  <g stroke-linecap="round">
+    <path d="M400 560L760 200" stroke="#38bdf8" stroke-width="2" opacity="0.35" />
+    <path d="M1240 560L1560 240" stroke="#fbbf24" stroke-width="2" opacity="0.30" />
+    <path d="M880 560L1160 280" stroke="#34d399" stroke-width="2" opacity="0.30" />
+  </g>
+
+  <!-- Central subtle vignette (mask fade) -->
+  <rect width="2000" height="600" fill="#0f172a" opacity="0.25" mask="url(#fadeMask)" />
+
+  <!-- Top and bottom gradient edges -->
+  <rect width="2000" height="140" fill="url(#bgGradient)" opacity="0.35" />
+  <rect y="460" width="2000" height="140" fill="url(#bgGradient)" opacity="0.40" />
+</svg>

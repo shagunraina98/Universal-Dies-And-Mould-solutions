@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Universal Dies &amp; Mould Solutions Logo</title>
+  <desc id="desc">Initials UDMS in an industrial geometric style</desc>
+  <!-- Background mark (optional subtle plate) -->
+  <rect x="1" y="1" width="198" height="58" rx="6" fill="#0F172A" stroke="#334155" stroke-width="2" />
+  <!-- Stylized Letters -->
+  <!-- U -->
+  <path d="M20 15 H30 V38.5C30 43 34 45 40 45C46 45 50 43 50 38.5V15H60V38.5C60 48 51 55 40 55C29 55 20 48 20 38.5V15Z" fill="#38BDF8" />
+  <!-- D -->
+  <path d="M70 15 H90C102 15 110 23 110 35C110 47 102 55 90 55H70V15ZM80 24V46H89C95 46 100 42 100 35C100 28 95 24 89 24H80Z" fill="#FBBF24" />
+  <!-- M (constructed with polygon shapes) -->
+  <path d="M120 55V15H132L140 34L148 15H160V55H150V32L140 50L130 32V55H120Z" fill="#34D399" />
+  <!-- S (two arcs / bands) -->
+  <path d="M170 23C170 17 176 13 186 13C194 13 200 16 200 22C200 32 176 28 176 37C176 41 180 44 186 44C192 44 195 42 196.5 39.5L197 39H197.5H198.5C197 46 191 50 186 50C175 50 170 44 170 38C170 27 194 31 194 22C194 18 191 17 186 17C181 17 177.5 18.5 176.5 23L176 25H175H170C170.2 24.3 170 23.6 170 23Z" fill="#F87171" />
+  <!-- Divider notch lines -->
+  <line x1="64" y1="15" x2="64" y2="55" stroke="#1E293B" stroke-width="2" />
+  <line x1="116" y1="15" x2="116" y2="55" stroke="#1E293B" stroke-width="2" />
+  <line x1="166" y1="15" x2="166" y2="55" stroke="#1E293B" stroke-width="2" />
+  <!-- Small tagline dots -->
+  <circle cx="20" cy="10" r="3" fill="#38BDF8" />
+  <circle cx="32" cy="10" r="3" fill="#FBBF24" />
+  <circle cx="44" cy="10" r="3" fill="#34D399" />
+  <circle cx="56" cy="10" r="3" fill="#F87171" />
+</svg>
