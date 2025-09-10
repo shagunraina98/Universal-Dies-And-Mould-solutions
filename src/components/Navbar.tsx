@@ -112,7 +112,7 @@ export default function Navbar() {
                 onClick={() => setOpen(false)}
                 className="btn btn-primary w-full text-sm justify-center py-2"
               >
-                Get a Quote
+                Get A Quote
               </Link>
             </li>
           </ul>
