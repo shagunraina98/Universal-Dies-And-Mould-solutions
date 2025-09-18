@@ -68,6 +68,88 @@ export default function ProductsPage(){
 
         <div className="border-t border-gray-200 my-12" />
 
+        {/* Products & Catalogues: Special Springs */}
+        <motion.section
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+          className="rounded-3xl bg-gradient-to-br from-gray-50 to-white p-8 sm:p-10 lg:p-12 shadow-sm border border-gray-100"
+        >
+          <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
+            Products & Catalogues
+          </motion.h2>
+          <motion.p variants={fadeUp} className="mt-2 text-sm sm:text-base text-gray-600 max-w-3xl">
+            <span className="font-semibold text-gray-900">Special Springs – ISO 10243 Wire Springs</span>. We are an authorized dealer of imported Die Springs (Special Springs s.r.l. Italy) including ISO 10243 and JIS‑B5012 standards.
+          </motion.p>
+
+          {/* Cards Grid */}
+          <motion.div
+            variants={stagger}
+            initial="visible"
+            className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6"
+          >
+            {[ 
+              {
+                title: 'Die Springs',
+                desc: 'High‑load, color‑coded springs per ISO 10243 for presses, dies, and tooling. Stable rate and long life.',
+                icon: 'Spring'
+              },
+              {
+                title: 'Guide Posts',
+                desc: 'Precision guide pillars and bushings for accurate die alignment and repeatability with low wear.',
+                icon: 'Pillar'
+              },
+              {
+                title: 'Gas Springs',
+                desc: 'Compact, high‑force gas springs for die applications with reliable sealing and safety features.',
+                icon: 'Gas'
+              }
+            ].map((c, idx) => (
+              <motion.div
+                key={idx}
+                variants={fadeUp}
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.98 }}
+                className="group rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all hover:shadow-lg"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-yellow-50 ring-1 ring-yellow-200">
+                    <span className="h-6 w-6 text-yellow-600">◆</span>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900">{c.title}</h3>
+                    <p className="mt-1 text-sm text-gray-600 leading-relaxed">{c.desc}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          {/* Resource Links */}
+          <motion.div variants={fadeUp} className="mt-8 flex flex-col sm:flex-row gap-3">
+            <Link
+              href="https://share.google/UvsRbS7mDgNnMCf8B"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-3 shadow transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400"
+            >
+              View ISO 10243 Wire Springs
+            </Link>
+            <Link
+              href="https://www.specialsprings.com/ipages/flipbook/3?preview=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-3 shadow transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400"
+            >
+              Explore Special Springs Flipbook
+            </Link>
+          </motion.div>
+        </motion.section>
+
+        <div className="border-t border-gray-200 my-12" />
+
         {/* Product Grid */}
         <motion.div initial="hidden" whileInView="visible" viewport={{once:true}} variants={stagger} transition={{duration:0.6,ease:'easeOut'}} className="grid gap-8 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
           {showing.map(p => (
