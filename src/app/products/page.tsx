@@ -77,12 +77,15 @@ export default function ProductsPage(){
           transition={{ duration: 0.6, ease: 'easeOut' }}
           className="rounded-3xl bg-gradient-to-br from-gray-50 to-white p-8 sm:p-10 lg:p-12 shadow-sm border border-gray-100"
         >
-          <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-            Products & Catalogues
-          </motion.h2>
-          <motion.p variants={fadeUp} className="mt-2 text-sm sm:text-base text-gray-600 max-w-3xl">
-            <span className="font-semibold text-gray-900">Special Springs – ISO 10243 Wire Springs</span>. We are an authorized dealer of imported Die Springs (Special Springs s.r.l. Italy) including ISO 10243 and JIS‑B5012 standards.
-          </motion.p>
+          <div className="text-center">
+            <motion.h2 variants={fadeUp} className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
+              Technical Catalogues & Resources
+            </motion.h2>
+            <div className="mx-auto mt-3 h-0.5 w-24 rounded-full bg-yellow-400" />
+            <motion.p variants={fadeUp} className="mx-auto mt-4 text-sm sm:text-base text-gray-600 max-w-3xl">
+              As an authorized dealer of Special Springs (Italy), we provide ISO 10243 Die Springs, JIS-B5012 standards, and more. Download our catalogues for detailed specifications.
+            </motion.p>
+          </div>
 
           {/* Cards Grid */}
           <motion.div
@@ -128,7 +131,7 @@ export default function ProductsPage(){
           </motion.div>
 
           {/* Resource Links */}
-          <motion.div variants={fadeUp} className="mt-8 flex flex-col sm:flex-row gap-3">
+          <motion.div variants={fadeUp} className="mt-8 flex flex-col sm:flex-row gap-3 justify-center items-stretch">
             <Link
               href="https://share.google/UvsRbS7mDgNnMCf8B"
               target="_blank"
